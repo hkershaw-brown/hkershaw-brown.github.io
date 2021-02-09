@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&lt;span&gt;Research&lt;/span&gt; where DART is making an &lt;span&gt;impact&lt;/span&gt; on DART | The Data Assimilation Research Testbed</title>
+    <link>http://example.org/portfolio/</link>
+    <description>Recent content in &lt;span&gt;Research&lt;/span&gt; where DART is making an &lt;span&gt;impact&lt;/span&gt; on DART | The Data Assimilation Research Testbed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Dec 2019 16:48:28 +0600</lastBuildDate><atom:link href="http://example.org/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whole Atmosphere Community Climate Model</title>
+      <link>http://example.org/portfolio/waccm/</link>
+      <pubDate>Mon, 23 Dec 2019 15:56:43 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/waccm/</guid>
+      <description>This is an excerpt from Applying the science and technology of data assimilation by Brian Bevirt 07/11/2017 as part of a CISL News series describing the many ways CISL improves modeling beyond providing supercomputing systems and facilities.</description>
+    </item>
+    
+    <item>
+      <title>Open Geospace General Circulation Model</title>
+      <link>http://example.org/portfolio/open_ggcm/</link>
+      <pubDate>Mon, 23 Dec 2019 15:55:44 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/open_ggcm/</guid>
+      <description>The primary goal of this project is to combine the OpenGGCM (Open Geospace General Circulation Model) with the NCAR Data Assimilation Research Testbed (DART), which implements an Ensemble Kalman Filter (EnKF) and will enable the sequential assimilation of ionosphere, thermosphere, and magetosphere data.</description>
+    </item>
+    
+    <item>
+      <title>Chemical Data Assimilation</title>
+      <link>http://example.org/portfolio/chemical/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:46 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/chemical/</guid>
+      <description>We are currently applying an ensemble-based chemical data assimilation system, consisting of regional to global chemical transport models (CAM-Chem, WRF-Chem) in conjunction with DART, for a joint assimilation of meteorological observations and satellite-derived CO measurements from MOPITT and aerosol optical depth (AOD) measurements from MODIS.</description>
+    </item>
+    
+    <item>
+      <title>Forecast sensitivity analysis</title>
+      <link>http://example.org/portfolio/sensitivity/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:46 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/sensitivity/</guid>
+      <description>Forecast sensitivity analysis provides an objective means of evaluating how initial condition errors affect a forecast and where to gather additional observations to reduce forecast errors.</description>
+    </item>
+    
+    <item>
+      <title>GPS RO Observations and Tropical Cyclone Forecasting </title>
+      <link>http://example.org/portfolio/gps/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:46 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/gps/</guid>
+      <description>Profiles of atmospheric quantities deduced from GPS Radio Occultation data are available in otherwise data-sparse regions and provide information used to forecast the behavior of tropical cyclones.</description>
+    </item>
+    
+    <item>
+      <title>Model for Prediction across Scales</title>
+      <link>http://example.org/portfolio/mpas/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:46 +0600</pubDate>
+      
+      <guid>http://example.org/portfolio/mpas/</guid>
+      <description>Data assimilation for MPAS is available as an ensemble Kalman filter (EnKF) implemented through Data Assimilation Research Testbed
+This work is done in a collaborative effort between the Mesoscale and Microscale Meteorology (MMM) Division and the DART development team.</description>
+    </item>
+    
+  </channel>
+</rss>
