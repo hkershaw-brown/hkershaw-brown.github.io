@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on DART | The Data Assimilation Research Testbed</title>
-    <link>http://example.org/blog/</link>
+    <link>https://hkershaw-brown.github.io/blog/</link>
     <description>Recent content in Tutorials on DART | The Data Assimilation Research Testbed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Dec 2019 20:17:01 +0600</lastBuildDate><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Dec 2019 20:17:01 +0600</lastBuildDate><atom:link href="https://hkershaw-brown.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DARTLAB</title>
-      <link>http://example.org/blog/dart-lab/</link>
+      <link>https://hkershaw-brown.github.io/blog/dart-lab/</link>
       <pubDate>Fri, 24 Jan 2020 13:36:06 +0600</pubDate>
       
-      <guid>http://example.org/blog/dart-lab/</guid>
+      <guid>https://hkershaw-brown.github.io/blog/dart-lab/</guid>
       <description>DARTLAB - an introduction to Data Assimilation using MATLAB  &amp;ldquo;An interesting quote about data assimilation&amp;rdquo;
   Some famous person
  </description>
@@ -20,19 +20,19 @@
     
     <item>
       <title>The DART tutorial</title>
-      <link>http://example.org/blog/dart-tutorial/</link>
+      <link>https://hkershaw-brown.github.io/blog/dart-tutorial/</link>
       <pubDate>Tue, 24 Dec 2019 13:32:54 +0600</pubDate>
       
-      <guid>http://example.org/blog/dart-tutorial/</guid>
+      <guid>https://hkershaw-brown.github.io/blog/dart-tutorial/</guid>
       <description>DART - a tutorial </description>
     </item>
     
     <item>
       <title>WRF-DART tutorial</title>
-      <link>http://example.org/blog/wrf-dart/</link>
+      <link>https://hkershaw-brown.github.io/blog/wrf-dart/</link>
       <pubDate>Fri, 24 Jan 2020 13:36:06 +0600</pubDate>
       
-      <guid>http://example.org/blog/wrf-dart/</guid>
+      <guid>https://hkershaw-brown.github.io/blog/wrf-dart/</guid>
       <description>WRF-DART a tutorial  &amp;ldquo;Its WRF and DART. In a tutorial&amp;rdquo;
   DAReS team
  </description>
