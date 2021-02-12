@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DART | The Data Assimilation Research Testbed</title>
-    <link>https://hkershaw-brown.github.io/</link>
-    <description>Recent content on DART | The Data Assimilation Research Testbed</description>
+    <title>&lt;span&gt;Research&lt;/span&gt; where DART is making an &lt;span&gt;impact&lt;/span&gt; on DART | The Data Assimilation Research Testbed</title>
+    <link>https://hkershaw-brown.github.io/research/</link>
+    <description>Recent content in &lt;span&gt;Research&lt;/span&gt; where DART is making an &lt;span&gt;impact&lt;/span&gt; on DART | The Data Assimilation Research Testbed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 13:36:06 +0600</lastBuildDate><atom:link href="https://hkershaw-brown.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DARTLAB</title>
-      <link>https://hkershaw-brown.github.io/tutorials/dart-lab/</link>
-      <pubDate>Fri, 24 Jan 2020 13:36:06 +0600</pubDate>
-      
-      <guid>https://hkershaw-brown.github.io/tutorials/dart-lab/</guid>
-      <description>DARTLAB - an introduction to Data Assimilation using MATLAB  &amp;ldquo;An interesting quote about data assimilation&amp;rdquo;
-  Some famous person
- </description>
-    </item>
-    
-    <item>
-      <title>The DART tutorial</title>
-      <link>https://hkershaw-brown.github.io/tutorials/dart-tutorial/</link>
-      <pubDate>Tue, 24 Dec 2019 13:32:54 +0600</pubDate>
-      
-      <guid>https://hkershaw-brown.github.io/tutorials/dart-tutorial/</guid>
-      <description>DART - a tutorial </description>
-    </item>
-    
-    <item>
-      <title>WRF-DART tutorial</title>
-      <link>https://hkershaw-brown.github.io/tutorials/wrf-dart/</link>
-      <pubDate>Fri, 24 Jan 2020 13:36:06 +0600</pubDate>
-      
-      <guid>https://hkershaw-brown.github.io/tutorials/wrf-dart/</guid>
-      <description>WRF-DART a tutorial  &amp;ldquo;Its WRF and DART. In a tutorial&amp;rdquo;
-  DAReS team
- </description>
-    </item>
-    
+    <lastBuildDate>Mon, 23 Dec 2019 16:48:28 +0600</lastBuildDate><atom:link href="https://hkershaw-brown.github.io/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whole Atmosphere Community Climate Model</title>
       <link>https://hkershaw-brown.github.io/research/waccm/</link>

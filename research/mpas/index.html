@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>DART | The Data Assimilation Research Testbed</title>
+  <title>Model for Prediction across Scales</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -100,178 +100,82 @@
 </nav>
 <main>
 
+<section class="site-project-single-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="site-project-single">
+          <h1>
+            Model for Prediction across Scales
+          </h1>
+          <div class="site-project-single-description">
+            <p>Data assimilation for MPAS is available as an ensemble Kalman filter (EnKF)
+implemented through <a href="http://dart.ucar.edu">Data Assimilation Research Testbed</a></p>
+<p>This work is done in a collaborative effort between the
+<a href="http://www.mmm.ucar.edu">Mesoscale and Microscale Meteorology (MMM)</a>
+Division and the DART development team. DART support for both MPAS-Atmosphere
+and MPAS-Ocean are available as part of the standard DART package.</p>
+<p>In collaboration with NOAA&rsquo;s <a href="http://www.esrl.noaa.gov">Earth System Research Laboratory</a>
+related efforts are also underway to explore ensemble data assimilation for MPAS-Atmosphere with the
+Gridpoint Statistical Interpolation (GSI) scheme that is operational at
+<a href="http://www.ncep.noaa.gov">the National Centers for Environmental Prediction</a>.</p>
+<p>Grid structure used in the MPAS/DART interface
+The MPAS/DART interface is
+built on MPAS&rsquo;s unstructured centroidal Voronoi mesh,
+and does not regrid to latitude-longitude grids. In MPAS, the finite-volume
+approach based on a C-grid staggering retains prognostic equations for mass
+at the center of finite-volume cells and for the normal component of velocity
+(<!-- raw HTML omitted --><!-- raw HTML omitted -->u<!-- raw HTML omitted --><!-- raw HTML omitted -->) at the faces (or edges in 2D) of the cells.
+The normal component of velocity (<!-- raw HTML omitted --><!-- raw HTML omitted -->u<!-- raw HTML omitted --><!-- raw HTML omitted -->) at cell edges is then used to
+reconstruct zonal and meridional winds at cell centers (<!-- raw HTML omitted --><!-- raw HTML omitted -->V<!-- raw HTML omitted --><!-- raw HTML omitted -->)
+using radial basis functions (RBFs).
+To avoid the singularity issue on the poles, the cartesian coordinate is employed.</p>
+<p>The forward operators on the unstructured grid mesh are constructed as follows.
+The dual of the Voronoi mesh, or the triangular mesh (shown as dashed lines in the
+figure), is used to search the closest cell center to an arbitrary (or observation)
+point, then find three cell centers of the triangle enclosing the desired point.
+Mass fields are then horizontally interpolated from the cell centers to the observation
+location using a barycentric (e.g., area-weighted) interpolation.</p>
+<p>While the observed wind quantities are zonal and meridional winds, the normal
+component of velocity (<!-- raw HTML omitted -->u<!-- raw HTML omitted -->) is the only prognostic wind variable in MPAS,
+we thus implement a couple of different ways of assimilating wind observations.
+The options determine which wind variables are used in the forward operator to
+compute expected observation values; how the horizontal interpolation is computed
+in that forward operator; and how the assimilation increments are applied to update
+the wind quantities in the state vector of the analysis.</p>
+<p>Preliminary results based on real data assimilation experiments indicate that
+performance is better when the zonal and meridional winds are used as input to the
+forward operator that uses Barycentric interpolation and the prognostic <!-- raw HTML omitted -->u<!-- raw HTML omitted -->
+wind is incrementally updated. However, there remain scientific questions about
+how best to handle the wind fields under different situations.</p>
+<p>For any questions or future collaboration, please contact either
+Soyoung Ha (<a href="mailto:syha@ucar.edu">syha@ucar.edu</a>) or the DART team (<a href="mailto:dart@ucar.edu">dart@ucar.edu</a>)</p>
 
-  
-  <!-- Site Hero Start -->
-  <section class="site-hero" style="background-image: url('images/backgrounds/NCAR-Waves.png');">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-           <video width=100% autoplay loop muted>
-             <source src="/images/lorentz_attractor.mp4" />
-           </video>
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <div class="site-hero-content">
-            <h1> The Data Assimilation Research Testbed </h1>
-          <h6>a community facility for ensemble data assimilation</h6>
           </div>
-          <div class="site-hero-content">
-            <ul class="site-hero-content-buttons">
-              <li>
-                <a href="https://hkershaw-brown.github.io/research" class="btn btn-secondary">
-                  <span class="btn-area">
-                    <span data-text="Research">
-                      Research
-                    </span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://hkershaw-brown.github.io/contact" class="btn btn-primary">
-                  <span class="btn-area">
-                    <span data-text="Contact Us">
-                      Contact Us
-                    </span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-         </div>
-         </div>
-      </div>
-    </div>
-    <a href="#counter" class="site-hero-scroll scroll-to">
-      <img src="images/arrow-down.svg" alt="arrow-down">
-    </a>
-  </section>
-  <!-- Site Hero End -->
-  
-
-
-
-
-  
-  <section class="site-counter" id="counter">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <h2 class="text-white">IMPACT OF DART</h2>
+          <div class="site-project-single-image">
+            
+            <img src="https://hkershaw-brown.github.io/images/science_nuggets/MPAS_spaghetti_Z500mb_anal.2008090512.png" alt="project image">
+            
+            <img src="https://hkershaw-brown.github.io/images/science_nuggets/MPAS_grid_components.png" alt="project image">
+            
           </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="site-counter-item">
-            <span class="site-counter-item-title">Models supported</span>
-            <h3 class="site-counter-item-number">20+</h3>
+          
+          <div class="site-project-single-action">
+            <a href="https://hkershaw-brown.github.io/research/gps/">
+              <span class="link-area">
+                <span data-text="Next Project">
+                  Next Project
+                </span>
+              </span>
+              <img src="https://hkershaw-brown.github.io/images/to-top.svg" alt="next project">
+            </a>
           </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="site-counter-item">
-            <span class="site-counter-item-title">Publications</span>
-            <h3 class="site-counter-item-number">100+</h3>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="site-counter-item">
-            <span class="site-counter-item-title">ASP postdocs</span>
-            <h3 class="site-counter-item-number">8+</h3>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="site-counter-item">
-            <span class="site-counter-item-title">SIParCS interns</span>
-            <h3 class="site-counter-item-number">3+</h3>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-
-
-
-  
-  <section class="site-project" id="project">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <h2>RECENT PROJECTS</h2>
-            <p>Research projects involving DART</p>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-10 mx-auto">
-          <div class="site-project-item">
-            <div class="site-project-item-thumb">
-              <img src="https://hkershaw-brown.github.io/images/science_nuggets/waccm_dart_ssw_t.png" alt="project-thumb">
-            </div>
-            <div class="site-project-item-content">
-              <span>CLIMATE MODELING</span>
-              <h3>Whole Atmosphere Community Climate Model</h3>
-              <a href="https://hkershaw-brown.github.io/research/waccm/" class="read-more">view project</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-10 mx-auto">
-          <div class="site-project-item">
-            <div class="site-project-item-thumb">
-              <img src="https://hkershaw-brown.github.io/images/science_nuggets/OpenGGCM_graphic.png" alt="project-thumb">
-            </div>
-            <div class="site-project-item-content">
-              <span>GEOSPACE MODELING</span>
-              <h3>Open Geospace General Circulation Model</h3>
-              <a href="https://hkershaw-brown.github.io/research/open_ggcm/" class="read-more">view project</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-10 mx-auto">
-          <div class="site-project-item">
-            <div class="site-project-item-thumb">
-              <img src="https://hkershaw-brown.github.io/images/science_nuggets/ChemicalWeather_NHprojection_full.png" alt="project-thumb">
-            </div>
-            <div class="site-project-item-content">
-              <span>ATMOSPHERIC CHEMISTRY</span>
-              <h3>Chemical Data Assimilation</h3>
-              <a href="https://hkershaw-brown.github.io/research/chemical/" class="read-more">view project</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-10 mx-auto">
-          <div class="site-project-item">
-            <div class="site-project-item-thumb">
-              <img src="https://hkershaw-brown.github.io/images/science_nuggets/2005082500_f048_DLMU_sens_full.png" alt="project-thumb">
-            </div>
-            <div class="site-project-item-content">
-              <span>HURRICANE KATRINA</span>
-              <h3>Forecast sensitivity analysis</h3>
-              <a href="https://hkershaw-brown.github.io/research/sensitivity/" class="read-more">view project</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-12 text-center text-lg-left">
-          <a href="research" class="site-project-cta">MORE PROJECTS</a>
+          
         </div>
       </div>
     </div>
-  </section>
-  
-
-
-
-
-  
-
+  </div>
+</section>
 
 
   
