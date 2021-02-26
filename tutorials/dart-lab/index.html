@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8" />
-  <title>DARTLAB</title>
+  <title>DART LAB</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -101,21 +101,82 @@
 <main>
 
 <section class="site-blog details">
-  <div class="container">
+  <div class="containr">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <article class="site-blog-details">
+      <div class="col-lg-10">
+        <article class="site-blog-details" style="background-image: url('/images/backgrounds/NCAR-Waves.png');">
           <p><span>January 24, 2020</span> by <span>dart</span></p>
-          <h2 class="blog-title">DARTLAB</h2>
+          <h2 class="blog-title">DART LAB</h2>
           <img class="feature-image" src="https://hkershaw-brown.github.io/images/blog/blog-details-image.jpg" alt="blog-feature-image">
-          <h3 id="dartlab---an-introduction-to-data-assimilation-using-matlab">DARTLAB - an introduction to Data Assimilation using MATLAB</h3>
-<p><img src="https://user-images.githubusercontent.com/16266381/71399826-2009b380-264f-11ea-9bc3-59d7fa9a9994.jpg" alt="blog-details-image-02"></p>
-<blockquote>
-<p>&ldquo;An interesting quote about data assimilation&rdquo;</p>
-</blockquote>
-<blockquote>
-<p>Some famous person</p>
-</blockquote>
+          <h4 id="an-introduction-to-data-assimilation-using-matlab">An introduction to Data Assimilation using MATLAB</h4>
+<p>DART_LAB is a MATLAB®-based tutorial to demonstrate the principles of
+ensemble data assimilation. The DART_LAB tutorial begins at a more introductory
+level than the materials in the tutorial directory, and includes hands-on exercises.
+DART_LAB consists of PDF tutorial materials and MATLAB® exercises.
+See below for links to the PDF files and a list of the
+corresponding MATLAB scripts.</p>
+<h4 id="dart_lab-tutorial-slides">DART_LAB tutorial slides</h4>
+<p><a href="/pdfs/dart_lab/DART_LAB_Section01.pdf">1. The basics in 1D.</a></p>
+<p><a href="/pdfs/dart_lab/DART_LAB_Section02.pdf">2. Multivariate assimilation.</a>  How should observations of a state variable impact an unobserved state variable?</p>
+<p><a href="/pdfs/dart_lab/DART_LAB_Section03.pdf">3. Sampling error and localization.</a></p>
+<p><a href="/pdfs/dart_lab/DART_LAB_Section04.pdf">4. The Ensemble Kalman Filter (Perturbed Observations).</a></p>
+<p><a href="/pdfs/dart_lab/DART_LAB_Section05.pdf">5. Adaptive Inflation.</a></p>
+<h4 id="hands-on-exercises">Hands-on Exercises</h4>
+<p>The DART_LAB materials are bundled with DART.</p>
+<p>You can download <a href="https://github.com/NCAR/DART">DART</a> from github using</p>
+<pre><code>git clone https://github.com/NCAR/DART.git
+</code></pre><p>To try the MATLAB hands-on exercies, start MATLAB in the <code>DART/docs/DART_LAB</code> directory.</p>
+<pre><code>cd DART/docs/DART_LAB
+matlab
+</code></pre><p>In the <code>matlab</code> subdirectory are a set of MATLAB scripts and
+graphical user interface (GUI) programs which are exercises that go with the
+tutorial. Each is interactive with settings that can be changed and
+rerun to explore various options. A valid
+<a href="http://www.mathworks.com/products/matlab/">MATLAB</a>
+license is needed to run these scripts.</p>
+<p>The exercises use the following functions:</p>
+<table>
+<thead>
+<tr>
+<th>function</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gaussian_product</code></td>
+<td style="text-align:left">graphical representation of the product of two gaussians</td>
+</tr>
+<tr>
+<td><code>oned_ensemble</code></td>
+<td style="text-align:left">explore the details of ensemble data assimilation for a scalar</td>
+</tr>
+<tr>
+<td><code>oned_model</code></td>
+<td style="text-align:left">simple ensemble data assimilation example</td>
+</tr>
+<tr>
+<td><code>oned_model_inf</code></td>
+<td style="text-align:left">simple ensemble data assimilation example <em>with inflation</em></td>
+</tr>
+<tr>
+<td><code>run_lorenz_63</code></td>
+<td style="text-align:left">ensemble DA with the 3-variable Lorenz &lsquo;63 dynamical model - the &ldquo;butterfly&rdquo; model</td>
+</tr>
+<tr>
+<td><code>run_lorenz_96</code></td>
+<td style="text-align:left">ensemble DA with the 40-variable Lorenz &lsquo;96 dynamical model</td>
+</tr>
+<tr>
+<td><code>run_lorenz_96_inf</code></td>
+<td style="text-align:left">ensemble DA with the 40-variable Lorenz &lsquo;96 dynamical model <em>with inflation</em></td>
+</tr>
+<tr>
+<td><code>twod_ensemble</code></td>
+<td style="text-align:left">demonstrates the impact of observations on unobserved state variables</td>
+</tr>
+</tbody>
+</table>
 
         </article>
       </div>
@@ -172,7 +233,7 @@
         </div>
       </div>
       <div class="col-lg-2 col-md-6">
-        <div class="site-footer-logo"><a href="https://hkershaw-brown.github.io/"><img src="https://hkershaw-brown.github.io/images/ncar-koru/footer-logo-nsf.png" alt="logo-footer"></a></div>
+        <div class="site-footer-logo"><a href="https://nsf.gov"><img src="https://hkershaw-brown.github.io/images/ncar-koru/footer-logo-nsf.png" alt="logo-footer"></a></div>
       </div>
     </div>
     <div class="row">

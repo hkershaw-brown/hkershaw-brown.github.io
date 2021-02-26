@@ -8,14 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Dec 2019 20:17:01 +0600</lastBuildDate><atom:link href="https://hkershaw-brown.github.io/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DARTLAB</title>
+      <title>DART LAB</title>
       <link>https://hkershaw-brown.github.io/tutorials/dart-lab/</link>
       <pubDate>Fri, 24 Jan 2020 13:36:06 +0600</pubDate>
       
       <guid>https://hkershaw-brown.github.io/tutorials/dart-lab/</guid>
-      <description>DARTLAB - an introduction to Data Assimilation using MATLAB  &amp;ldquo;An interesting quote about data assimilation&amp;rdquo;
-  Some famous person
- </description>
+      <description>An introduction to Data Assimilation using MATLAB DART_LAB is a MATLAB®-based tutorial to demonstrate the principles of ensemble data assimilation. The DART_LAB tutorial begins at a more introductory level than the materials in the tutorial directory, and includes hands-on exercises.</description>
     </item>
     
     <item>
@@ -24,7 +22,7 @@
       <pubDate>Tue, 24 Dec 2019 13:32:54 +0600</pubDate>
       
       <guid>https://hkershaw-brown.github.io/tutorials/dart-tutorial/</guid>
-      <description>DART - a tutorial </description>
+      <description>The DART Tutorial is intended to aid in the understanding of ensemble data assimilation theory and consists of step-by-step concepts and companion exercises with DART.</description>
     </item>
     
     <item>
