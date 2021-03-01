@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DART on DART | The Data Assimilation Research Testbed</title>
+    <title>Data Assimilation Research Testbed on DART | The Data Assimilation Research Testbed</title>
     <link>https://hkershaw-brown.github.io/software/</link>
-    <description>Recent content in DART on DART | The Data Assimilation Research Testbed</description>
+    <description>Recent content in Data Assimilation Research Testbed on DART | The Data Assimilation Research Testbed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Dec 2019 20:17:01 +0600</lastBuildDate><atom:link href="https://hkershaw-brown.github.io/software/index.xml" rel="self" type="application/rss+xml" />
