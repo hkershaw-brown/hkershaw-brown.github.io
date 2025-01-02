@@ -10,7 +10,7 @@ const rightPaddle = { x: canvas.width - paddleWidth, y: canvas.height / 2 - padd
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  radius: 10,
+  radius: 6,
   speedX: 5,
   speedY: 5,
   dx: 5,
@@ -63,12 +63,22 @@ function updateBall() {
   }
 }
 
-// Reset ball to the center
+// Reset ball to the center with pause
 function resetBall() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
-  ball.dx = 5 * (Math.random() > 0.5 ? 1 : -1);
-  ball.dy = 5 * (Math.random() > 0.5 ? 1 : -1);
+  ball.dx = 0;
+  ball.dy = 0;
+  ball.radius = 60;
+
+  // Pause for 1 second before the ball starts moving again
+  setTimeout(() => {
+    const angle = Math.random() * Math.PI / 4 - Math.PI / 8; // Random angle between -45 and 45 degrees
+    const speed = 5;
+    ball.dx = speed * Math.cos(angle) * (Math.random() > 0.5 ? 1 : -1); // Randomize direction
+    ball.dy = speed * Math.sin(angle) * (Math.random() > 0.5 ? 1 : -1); // Randomize direction
+    ball.radius = 6;
+}, 300); // 1000 milliseconds = 1 second
 }
 
 // Paddle movement
