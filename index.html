@@ -7,7 +7,52 @@
   <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
-  <canvas id="pong" width="800" height="400"></canvas>
-  <script src="src/scripts/pong.js"></script>
+  <div class="main-content">
+    <div class="embed-window" id="game-embed"></div>
+  </div>
+  <script>
+    // Randomly choose which game to embed
+    const games = [
+      {
+        src: 'https://helencodes.com/pong',
+        title: 'Games',
+        width: 800,
+        height: 400,
+        style: 'border:2px solid #fff; border-radius:8px; background:#000; overflow:hidden;'
+      },
+      {
+        src: 'https://helencodes.com/tic-tac-toe',
+        title: 'Games',
+        width: 800,
+        height: 600,
+        style: 'border:20px solid #ccc; border-radius:8px; background:#fff;'
+      }
+    ];
+      let currentGameIndex = Math.floor(Math.random() * games.length);
+
+      function showGame(index) {
+        const game = games[index];
+        const container = document.getElementById('game-embed');
+        container.innerHTML = '';
+        const iframe = document.createElement('iframe');
+        iframe.src = game.src;
+        iframe.title = game.title;
+        iframe.width = game.width;
+        iframe.height = game.height;
+        iframe.style = game.style;
+        iframe.setAttribute('scrolling', 'no');
+        container.appendChild(iframe);
+      }
+
+      showGame(currentGameIndex);
+
+      document.addEventListener('keydown', function(e) {
+        if (e.code === 'Space' || e.key === ' ') {
+          e.preventDefault();
+          currentGameIndex = (currentGameIndex + 1) % games.length;
+          showGame(currentGameIndex);
+        }
+      });
+  </script>
 </body>
 </html>
